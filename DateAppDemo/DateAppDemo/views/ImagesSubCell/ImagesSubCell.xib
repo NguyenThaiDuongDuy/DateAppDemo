@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="ImagesSubCell" reuseIdentifier="ImagesSubCell" id="gTV-IL-0wX" customClass="ImagesSubCell" customModule="DateAppDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="301" height="193"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="301" height="193"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="o4c-PW-qkf" customClass="UIImageViewCustom" customModule="DateAppDemo" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="301" height="193"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="o4c-PW-qkf" secondAttribute="bottom" id="Ggu-xx-ldR"/>
+                <constraint firstAttribute="trailing" secondItem="o4c-PW-qkf" secondAttribute="trailing" id="Uml-Xg-Cbj"/>
+                <constraint firstItem="o4c-PW-qkf" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="fRv-Ty-iIN"/>
+                <constraint firstItem="o4c-PW-qkf" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="fdU-Ae-UKm"/>
+            </constraints>
+            <size key="customSize" width="301" height="193"/>
+            <connections>
+                <outlet property="mImageView" destination="o4c-PW-qkf" id="OG0-wX-gYc"/>
+            </connections>
+            <point key="canvasLocation" x="319.56521739130437" y="147.65625"/>
+        </collectionViewCell>
+    </objects>
+</document>

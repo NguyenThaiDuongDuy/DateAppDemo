@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="93" id="KGk-i7-Jjw" customClass="InfoUserCell" customModule="DateAppDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="93"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="93"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dlU-56-rwh">
+                        <rect key="frame" x="15" y="5" width="36" height="36"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="36" id="7t1-gL-vET"/>
+                            <constraint firstAttribute="height" constant="36" id="pEF-o2-MWB"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CXt-6T-8VG">
+                        <rect key="frame" x="66" y="13" width="239" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="dlU-56-rwh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="3RY-Sj-P4u"/>
+                    <constraint firstAttribute="trailing" secondItem="CXt-6T-8VG" secondAttribute="trailing" constant="15" id="LWM-gv-WBf"/>
+                    <constraint firstAttribute="bottom" secondItem="dlU-56-rwh" secondAttribute="bottom" constant="5" id="Vrz-7u-tK6"/>
+                    <constraint firstItem="CXt-6T-8VG" firstAttribute="centerY" secondItem="dlU-56-rwh" secondAttribute="centerY" id="hYU-Wq-zT3"/>
+                    <constraint firstItem="dlU-56-rwh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="mAX-fl-MKb"/>
+                    <constraint firstItem="CXt-6T-8VG" firstAttribute="leading" secondItem="dlU-56-rwh" secondAttribute="trailing" constant="15" id="y0a-lc-pfe"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="mIconImage" destination="dlU-56-rwh" id="Dn9-ak-SIJ"/>
+                <outlet property="mLbl" destination="CXt-6T-8VG" id="HQ7-gr-Rqg"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="18.415178571428569"/>
+        </tableViewCell>
+    </objects>
+</document>
